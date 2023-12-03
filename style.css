@@ -1,0 +1,254 @@
+* {
+    user-select: none;
+    cursor: auto;
+}
+
+/*  
+1A1A1A > 2E2E2E > 444444
+font-family: 'Onest', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Ubuntu', sans-serif;  
+font-family: 'Anton', sans-serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+body {
+    background-color: #1A1A1A;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Navigation Bar                               */
+/* -------------------------------------------------------------------------- */
+
+.navbar {
+    background-color: #2b2b2b;
+    border: 2px solid #141718;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar i {
+    margin-right: 20px;
+}
+
+.homeicon {
+    transition: color 0.3s ease;
+}
+
+.homeicon:hover {
+    color: #141718;
+}
+
+.usericon {
+    transition: color 0.3s ease;
+}
+
+.usericon:hover {
+    color: #141718;
+}
+
+.codeicon {
+    transition: color 0.3s ease;
+}
+
+.codeicon:hover {
+    color: #141718;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Message Area                                */
+/* -------------------------------------------------------------------------- */
+
+.MessageArea {
+    margin-top: 125px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.MessageArea * {
+    display: block;
+}
+
+#MessageA {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#MessageB {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Button Area                                */
+/* -------------------------------------------------------------------------- */
+
+.ButtonArea * {
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    margin-top: 25px;
+    margin-left: 15px;
+    background-color: #2d2d2d;
+    border: 2px solid #141718;
+    border-radius: 6px;
+}
+
+.ButtonArea *:first-child {
+    margin-left: 50px;
+}
+
+.ButtonArea *:hover {
+    background: #1f1f1f;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Interests Area                               */
+/* -------------------------------------------------------------------------- */
+
+.InterestA li {
+    margin-left: 50px;
+    display: block;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.InterestA a {
+    margin-left: 50px;
+    display: block;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.Topic {
+    margin-left: 50px;
+}
+
+ul {
+    list-style: none;
+    /* Remove default bullets */
+}
+
+ul li::before {
+    content: "\2022";
+    /* Unicode for a bullet point */
+    color: #FF0000;
+    /* Set desired color */
+    font-weight: bold;
+    /* Optional: Change font weight */
+    display: inline-block;
+    /* Needed for spacing */
+    width: 0.8em;
+    /* Adjust width as needed */
+    margin-left: -0.8em;
+    /* Adjust margin as needed */
+}
+
+.extensions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .extensions li {
+    width: 30%;
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+/* 
+    border: 5px solid black;
+    background-color: red;
+  }
+
+#homo {
+    border: 2px solid green;
+    background-color: blue;
+}
+*/
+
+/* -------------------------------------------------------------------------- */
+/*                                    Card                                    */
+/* -------------------------------------------------------------------------- */
+
+.card {
+    width: 350px;
+    height: 200px;
+    background-color: #262626;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-text {
+    display: block;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.card .card-button {
+    text-align: center;
+}
+
+.card-button {
+    color: white;
+    font-weight: 700;
+    width: 100px;
+    padding: 7.5px;
+    margin-top: auto;
+    font-size: 80%;
+    background-color: #cf1031;
+    outline: none;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 6px;
+    transition: ease-out .1s;
+}
+
+.card-button:hover {
+    background-color: #a60d27;
+    transition: ease-in .1s;
+}
+
+.card-color {
+    display: block;
+    margin: 10px auto;
+    outline: none;
+}
+
+.Grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
