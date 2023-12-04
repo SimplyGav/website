@@ -188,64 +188,54 @@ ul li::before {
 /* -------------------------------------------------------------------------- */
 /*                                    Card                                    */
 /* -------------------------------------------------------------------------- */
-
 .card {
     width: 350px;
-    height: 200px;
     background-color: #262626;
     border-radius: 8px;
     margin: 0 auto;
     margin-top: 25px;
-}
-
-.card-body {
+    display: flex;
+    flex-direction: column; /* Allow internal flexed item alignment */
+  }
+  
+  .card-body {
     text-align: center;
-}
-
-.card-title {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.card-text {
-    display: block;
-    padding-bottom: 20px;
-    font-weight: 500;
-}
-
-.card .card-button {
-    text-align: center;
-}
-
-.card-button {
+    flex-grow: 1; /* Allows card-body to expand to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the button to the bottom */
+    padding: 20px 10px; /* Combined padding for top and sides */
+  }
+  
+  .card-title, .card-text {
+    margin-bottom: 10px; /* Adds space between title and text */
+  }
+  
+  .card-text {
+    overflow: auto; /* If text is too long, it will be scrollable */
+    flex-grow: 1;
+  }
+  
+  .card-button {
     color: white;
     font-weight: 700;
     width: 100px;
     padding: 7.5px;
-    margin-top: auto;
     font-size: 80%;
     background-color: #cf1031;
     outline: none;
     border: 1px solid black;
-    text-align: center;
     border-radius: 6px;
-    transition: ease-out .1s;
-}
-
-.card-button:hover {
+    transition: background-color 0.1s ease;
+    align-self: center; /* Center the button in the flex container */
+  }
+  
+  .card-button:hover {
     background-color: #a60d27;
-    transition: ease-in .1s;
-}
-
-.card-color {
-    display: block;
-    margin: 10px auto;
-    outline: none;
-}
-
+  }
+  
+  /* .card-color is not styled, make sure you add styles if needed. */
+  
 .Grid {
     display: flex;
     flex-wrap: wrap;
